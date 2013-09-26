@@ -1,17 +1,17 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/gsm.mk)
 
 PRODUCT_RELEASE_NAME := NS
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
 
-PRODUCT_NAME := cm_crespo
+PRODUCT_NAME := mk_crespo
 PRODUCT_DEVICE := crespo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus S
