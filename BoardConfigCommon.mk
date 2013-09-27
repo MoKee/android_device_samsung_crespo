@@ -130,3 +130,6 @@ BOARD_SEPOLICY_UNION += \
     pvrsrvinit.te \
     rild.te
 
+ifdef MK_RELEASE
+WITH_DEXPREOPT := true
+endif
