@@ -26,3 +26,7 @@ TARGET_BOARD_INFO_FILE ?= device/samsung/crespo/board-info.txt
 
 # Use the parts that are common between all crespos
 include device/samsung/crespo/BoardConfigCommon.mk
+
+ifdef MK_RELEASE
+WITH_DEXPREOPT := true
+endif
